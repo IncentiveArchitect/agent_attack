@@ -11,7 +11,7 @@ This investigates the structural fragility of "Safety Guardrails" in fine-tuned 
 
 ## Part 1: The Surgical Lobotomy (Mechanistic Jailbreak)
 
-### 1.1 The Hypothesis
+### 1.1 Explanation
 
 Current safety training (RLHF) does not remove dangerous knowledge; it suppresses it. This suppression mechanism exists as a specific **"Refusal Vector"** within the model's residual stream (specifically at Layer 14) and that subtracting this vector would restore the model's ability to generate harmful content.
 
