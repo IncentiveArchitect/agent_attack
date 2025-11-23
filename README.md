@@ -1,8 +1,8 @@
-# Refusal Vectors and Cognitive Hacking in Qwen-1.8B
+# Refusal Vectors and Cognitive Hacking in Qwen1.5-1.8B-Chat
 
 ## Abstract
 
-This investigates the structural fragility of "Safety Guardrails" in fine-tuned Large Language Models (LLMs). Using the **Glass Box** methodology (Mechanistic Interpretability), I replicated two failure modes on a local Qwen-1.8B instance:
+This investigates the structural fragility of "Safety Guardrails" in fine-tuned Large Language Models (LLMs). Using the **Glass Box** methodology (Mechanistic Interpretability), I replicated two failure modes on a local Qwen1.5-1.8B-Chat instance:
 
 1.  **Mechanistic Jailbreak via Vector Ablation:** Demonstrating that safety refusals are represented as manipulatable linear directions in the residual stream. I identify a critical "entanglement" problem where naive ablation destroys grammatical coherence, and solve it using a **Paired Prompt Orthogonalization** technique.
 2.  **System-Level Compromise via Cognitive Hacking:** Empirically validating that Reinforcement Learning from Human Feedback (RLHF) creates a "Format Compliance" vulnerability, where JSON syntax constraints override safety objectives.
