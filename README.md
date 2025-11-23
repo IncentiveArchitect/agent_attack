@@ -83,9 +83,13 @@ This replicates findings in recent literature regarding **Constrained Decoding A
 
 -----
 
-## Conclusion and Future Work
+## Conclusion
 
 This case study demonstrates that safety in \~2B parameter models is neither robust nor intrinsic.
 
 1.  **Internal:** Safety is a linear direction that can be surgically removed without destroying capabilities, provided the vector is orthogonalized.
 2.  **External:** Safety can be overriden by formatting constraints, allowing you to hack the model without weight access.
+
+## Acknowledgement:
+
+I used Gemini 3 to help me write this post. 
